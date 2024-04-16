@@ -1,0 +1,144 @@
+.formacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background: var(--azul-claro);
+    align-self: stretch;
+    margin-bottom: 2rem;
+}
+.formacao__area{
+    display: flex;
+    justify-content: space-around;
+}
+
+.formacao__titulo {
+    color: var(--preto);
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.formacao__img{
+    background: var(--branco);
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem
+
+}
+.forrmacao__descricao{
+    justify-content: center;
+    align-items: center;
+
+}
+
+.formacao__texto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 0;
+    color: var(--preto);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.formacao__subtexto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--preto);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+}
+
+@media screen and (min-width: 0) {
+    .formacao{
+        padding: 1rem 0;
+    }
+    .formacao__area{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formacao__titulo{
+        font-size: 16px ;
+    }
+    .formacao__img{
+        width: 18.5rem;
+        height: 7.375rem;
+    }
+    .formacao__logo{
+        width: 4.375rem;
+        height: 3rem;
+    }
+    .formacao__texto{
+        font-size: 16px;
+    }
+    .formacao__subtexto{
+        font-size: 14px;
+    }
+    
+    
+}
+
+@media screen and (min-width: 768px) {
+    .formacao{
+        padding: 1rem 0;
+    }
+    .formacao__area{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formacao__titulo{
+        font-size: 22px;
+    }
+    .formacao__img{
+        width: 14rem;
+        height: 7.375rem;
+
+    }
+    .formacao__logo{
+        width: 4.375rem;
+        height: 3rem;
+    }
+    .formacao__texto{
+        font-size: 16px;
+    }
+    .formacao__subtexto{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .formacao{
+        padding: 1rem;
+    }
+    .formacao__area{
+        width: 71rem;
+        flex-direction: row;
+        align-items: center;
+    }
+    .formacao__titulo{
+        font-size: 32px;
+    }
+    .formacao__img{
+        width: 23rem;
+        height: 17.875rem;
+    }
+    .formacao__logo{
+        width: 12rem;
+        height: 8.125rem;
+    }
+    .formacao__texto{
+        font-size: 22px;
+    }
+    .formacao__subtexto{
+        font-size: 16px;
+    }
+}

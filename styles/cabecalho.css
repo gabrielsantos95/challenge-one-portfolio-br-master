@@ -1,0 +1,125 @@
+.cabecalho {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__titulo {
+    color: var(--cor-de-link);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 1rem;
+}
+
+.cabecalho__img {
+    vertical-align: bottom;
+}
+
+.cabecalho__menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu__lista {
+    color: var(--cor-de-link);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: row;
+}
+
+.menu__item {
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+}
+
+.menu__item a {
+    color: var(--cor-de-link);
+    text-decoration: underline;
+}
+
+.menu__item a:hover {
+    color: var(--roxo);
+    text-decoration: underline;
+    transition: 0.5seg all;
+}
+
+
+.menu__item:last-child{
+    font-weight: 700;
+}
+
+@media screen and (min-width: 0) {
+    .cabecalho {
+        width: 100%;
+    }
+
+    .cabecalho__titulo {
+        font-size: 8px;
+    }
+    
+    .cabecalho__img {
+        width: 0.7rem;
+        min-height: 0.5rem;
+    }
+
+    .menu__item {
+        display: none;
+    }
+
+    .menu__item:last-child {
+        display: block;
+        font-size: 8px;
+        margin-right: 6rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        width: 100%;
+    }
+    .cabecalho__titulo{
+        font-size: 10px;
+        display: block;
+    }
+    .cabecalho__img{
+        width: 1rem;
+        min-height: 0.5rem;
+    }
+    .menu__item{
+        display: none;
+    }
+    .menu__item:last-child{
+        display: block;
+        font-size: 10px;
+    }
+
+   
+}
+
+@media screen and (min-width: 992px) {
+    .cabecalho {
+        width: 71rem;
+    }
+    .cabecalho__titulo{
+        font-size: 16px;
+    }
+    .cabecalho__img{
+        width: 1.5rem;
+        min-height: 0.5rem;
+    }
+    .menu__item{
+        display: block;
+        font-size: 16px;
+    }
+    .menu__item:last-child{
+        font-size: 16px;
+    }
+     
+}
